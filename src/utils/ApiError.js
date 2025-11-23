@@ -10,10 +10,10 @@ class ApiError extends Error {
         this.data = null,
         this.message = message
         this.success = false 
-        this.errors = this.errors
+        this.errors = errors
 
 
-        if(stack) {
+        if(stack) {                 //Stack Trace code agar nhi diya to javascript auto generate krdeti hai 
             this.stack = stack
         } 
         else {
